@@ -1,0 +1,1 @@
+#cùng 1 tên hàm nhưng class  nhưng hàm con có thể hàm đó có chức năng khác
