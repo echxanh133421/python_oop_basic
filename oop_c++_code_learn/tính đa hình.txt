@@ -1,0 +1,13 @@
+**link:https://codelearn.io/sharing/tinh-da-hinh-trong-oop
+
+-Sự kế thừa trong C++ cho phép có sự tương ứng giữa lớp cơ sở và các lớp dẫn xuất trong sơ đồ thừa kế:  
++Một con trỏ có kiểu lớp cơ sở luôn có thể trỏ đến địa chỉ của một đối tượng của lớp dẫn xuất. 
++Tuy nhiên, khi thực hiện lời gọi một phương thức của lớp, trình biên dịch sẽ quan tâm đến kiểu của con 
+trỏ chứ không phải đối tượng mà con trỏ đang trỏ tới: phương thức của lớp mà con trỏ có kiểu được gọi chứ 
+không phải phương thức của đối tượng mà con trỏ đang trỏ tới được gọi. 
+
+-nghĩa là có nhiều hình thái khác nhau. Tiêu biểu là, đa hình xuất hiện khi có một cấu trúc cấp 
+bậc của các lớp và chúng liên quan với nhau bởi tính kế thừa.
+
+
+đọc thêm

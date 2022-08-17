@@ -1,0 +1,43 @@
+1. hàm tạo(constructor):
+-là một phương thức đặc biệt được gọi tự động tại thời điểm đối tượng được tạo. 
+Mục đích của hàm khởi tạo là để khởi tạo các thành viên dữ liệu của đối tượng.
+-điểm đặc biệt của hàm tạo:
++có tên trùng tên lớp
++không có kiểu trả về
++Tự động được gọi khi một đối tượng thuộc lớp được tạo ra(khi khai báo thì hàm sẽ được gọi)
++Nếu chúng ta không khai báo một hàm khởi tạo, 
+trình biên dịch C++ sẽ tự động tạo một hàm khởi tạo mặc định cho chúng ta (sẽ là hàm ​​không có tham số nào và có phần thân trống).
+- hàm khởi tạo được chia làm 3 loại chính:
++Hàm khởi tạo không tham số (Cũng có thể gọi là hàm tạo mặc định – Default Constructor)
++Hàm khởi tạo có tham số (Parameterized Constructor)
++Hàm khởi tạo sao chép (Copy Constructor): tham số là 1 đối tượng có kiểu sữ liệu là class đố
+
+
+vd: class_cho(class_cho B){this->name=B.name;
+                           this->age=B.age; }
+
+2. hàm hủy(disconstructor)
+-ngược lại với hàm khởi tạo, trong khi hàm khởi tạo dùng để khởi tạo giá trị cho đối tượng thì hàm hủy dùng để hủy đối tượng.
+-Chỉ có duy nhất một hàm hủy trong một lớp. Hàm hủy tự động được gọi. 
+Nếu như chúng ta không định nghĩa hàm hủy thì mặc định trình biên dịch sẽ tự tạo ra một hàm hủy mặc nhiên.
+- hàm hủy cũng khoonong có kiểu trả về,cú pháp: ~name_class(){};
+
+-hàm hủy (Destructor) sẽ được gọi tự động khi đối tượng đi ra khỏi phạm vi:
++Kết thúc hàm
++Kết thúc chương trình
++Kết thúc một block
++Toán tử delete được gọi
+
+-Lớp con không có thừa kế hàm hủy từ lớp cha của nó
+-Với C++ thì nếu ta không khai báo một hàm hủy, trình biên dịch cũng sẽ tự định nghĩa một hàm hủy. 
+Thông thường thì hàm hủy này hoạt động khá tốt, nhưng khi bài toán có sử dụng con trỏ, 
+hoặc cấp phát bộ nhớ động thì ban nên khai báo một hàm huỷ riêng để tránh rỏ rỉ bộ nhớ.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+1.lớp(class):
+-là 1 bản thiết từ đó tạo ra đối tượng, giống khuôn mẫu
+-có 3 loại phạm vi truy cập của các thành phần: public, private, protected
+2. đối tượng(object)
+-truy cập sữ liệu dùng toán tử chấm "."
+-phạm vi truy cập:
++public: không hạn chế ở bất kỳ đâu
++private: chỉ được truy cập từ các hàm(method) trong lớp
++protected: chỉ đưuộc truy xuất trong nội bộ lớp và các lớp dẫn xuất(lớp con)
+* nếu không khai báo thì mặc định là private
+trong c++ có thể định nghĩa hàm của lớp ở ngoài lớp 
+

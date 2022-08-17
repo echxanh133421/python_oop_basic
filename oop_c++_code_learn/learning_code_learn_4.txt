@@ -1,0 +1,11 @@
+1.con trỏ this
+-This là một con trỏ đặc biệt dùng để trỏ đến địa chỉ của đối tượng hiện tại. Như vậy để truy cập đến các thuộc tính, phương thức của đối tượng hiện tại thì ta sẽ sử dụng con trỏ this
+-Như vậy con trỏ this dùng để tham chiếu đến thể hiện hiện tại của lớp. Con trỏ this có thể sử dụng trong 3 cách như sau
++Nó có thể được sử dụng để truyền đối tượng hiện tại làm tham số cho phương thức khác.
++Nó có thể được sử dụng để tham chiếu đến thể hiện hiện tại của lớp .
++Nó có thể được sử dụng để khai báo các chỉ mục.
+2. từ khóa static
+-cú pháp:
+static KieuDuLieu tenTruong;
+-cú pháp khởi tạo giá trị:
+KieuDuLieu TenLop::tenTruongStatic = Gia tri;

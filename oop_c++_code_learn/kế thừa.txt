@@ -1,0 +1,39 @@
+- cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có. 
+Có nghĩa là lớp cha có thể chia sẽ dữ liệu và phương thức cho các lớp con. 
+Các lớp con khỏi phải định nghĩa lại, ngoài ra có thể mở rộng các thành phần kế 
+thừa và bổ sung thêm các thành phần mới. Tái sử dụng mã nguồn 1 cách tối ưu, tận dụng được mã nguồn.
+-cú pháp
+
+class lopcon : phamvitruycap lop_cha
+{
+   // nội dung lớp con
+};
+
+
+- phạm vi truy cập khi kế thừa:
++public: Nếu kế thừa ở dạng này, sau khi kế thừa, tất cả các thành viên dạng public 
+lớp cha sẽ public ở lớp con, dạng protected ở lớp cha vẫn sẽ là protected ở lớp con.
++protected: Nếu dùng protected thì sau khi kế thừa, tất cả các thành viên dạng 
+public lớp cha sẽ trở thành protected tại lớp con.
++private: Trường hợp ta sử dụng private, thì sau khi kế thừa, tất cả các 
+thành viên dạng public và protected ở lớp cha sẽ thành private tại lớp con.
+
+**link:
+https://codelearn.io/sharing/tinh-ke-thua-trong-oop
+
+2. các loại kế thừa
+-Đơn kế thừa(Single Inheritance):nghĩa là một lớp chỉ được kế thừa từ đúng một lớp khác. 
+Hay nói cách khác, lớp con chỉ có duy nhất một lớp cha.
+-Đa kế thừa (Multiple Inheritance):là một tính năng của ngôn ngữ C++. Trong đó một lớp có 
+thể kế thừa từ nhiều hơn một lớp khác. Nghĩa là một lớp con được kế thừa từ nhiều hơn một lớp cơ sở.
+-cú pháp đa kế thừa:
+class lopcon : phamvitruycap lopcha1, phamvitruycap lopcha2, ....
+{
+  // nội dung của lớp con
+};
+
+- Kế thừa đa cấp (Multilevel Inheritance):Trong kiểu thừa kế này, một lớp dẫn xuất được tạo từ một lớp dẫn xuất khác.
+- Kế thừa phân cấp (Hierarchical Inheritance):Trong kiểu thừa kế này, sẽ có nhiều hơn một lớp con được kế thừa từ một lớp cha duy nhất.
+
+- Kế thừa lai (Kế thừa ảo) – Hybrid (Virtual) Inheritance:được thực hiện bằng cách kết hợp nhiều hơn một loại thừa kế.
+
